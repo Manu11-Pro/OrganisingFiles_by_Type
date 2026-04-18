@@ -12,17 +12,17 @@
   - jpeg
   - and more coming...
 
-  # 📄Documents
+  # 📄 Documents
   - txt
   - pdf
   - docx
   - and more coming...
 
-  # 📹Videos
+  # 📹 Videos
   - mp4
   - and more coming...
 
-  # 🔊Audio 
+  # 🔊 Audio 
   - mp3
   - wav
   - and more coming
