@@ -3,25 +3,26 @@
 - 📄 This repo uses Python to Organise Files so that users can care about doing stuff they want to instead of the tedious new_folder,copy,cut,paste.
 - 📄 It is also a good way to not loose your files in the messy file heapes!
 
-  
+
+
 # Organising into Types!
-  # 📸 Images
+  ## 📸 Images
   - png
   - jpg
   - jpeg
   - and more coming...
 
-  # 📄 Documents
+  ## 📄 Documents
   - txt
   - pdf
   - docx
   - and more coming...
 
-  # 📹 Videos
+  ## 📹 Videos
   - mp4
   - and more coming...
 
-  # 🔊 Audio 
+  ## 🔊 Audio 
   - mp3
   - wav
   - and more coming
