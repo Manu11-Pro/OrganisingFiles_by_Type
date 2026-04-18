@@ -1,0 +1,13 @@
+[project]
+name = "OrganisingFiles_by_Type"
+version = "0.1.0"
+description = "File Organiser which organises files by type"
+authors = [
+    { name = "Manu11-Pro" }
+]
+
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
