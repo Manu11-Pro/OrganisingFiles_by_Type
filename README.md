@@ -25,5 +25,5 @@
   ## 🔊 Audio 
   - mp3
   - wav
-  - and more coming
+  - and more coming...
   
