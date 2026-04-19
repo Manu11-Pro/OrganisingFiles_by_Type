@@ -20,6 +20,7 @@
 
   ## 📹 Videos
   - mp4
+  - mov
   - and more coming...
 
   ## 🔊 Audio 
