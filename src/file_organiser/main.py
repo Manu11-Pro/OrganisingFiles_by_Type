@@ -2,9 +2,7 @@ import shutil
 import os
 from utils import all_files_paths, all_folders_paths
 
-for files_path in all_files_paths:
-
-    folder_path = all_folders_paths
+for files_path , folder_path in zip (all_files_paths, all_folders_paths):
 
     file_path = files_path
 
@@ -13,7 +11,7 @@ for files_path in all_files_paths:
 
     filename, ext = os.path.splitext(file_name_with_ext_only)
 
-    ext.lower()
+    ext = ext.lower()
 
     #Images
 
