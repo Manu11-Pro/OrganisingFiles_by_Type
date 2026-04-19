@@ -75,6 +75,12 @@ for files_path in all_files_paths:
         shutil.copy2(file_path , dest_dir_videos)
         print(f"Organised {file_name_with_ext_only} to {dest_dir_videos}")
 
+    if ext == ".ogv":
+        if not os.path.exists(dest_dir_videos):
+            os.makedirs(dest_dir_videos)
+        shutil.copy2(file_path , dest_dir_videos)
+        print(f"Organised {file_name_with_ext_only} to {dest_dir_videos}")
+
     #Musics
 
     dest_dir_musics = os.path.join(folder_path, "Musics")
