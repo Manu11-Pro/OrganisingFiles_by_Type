@@ -21,6 +21,7 @@
   ## 📹 Videos
   - mp4
   - mov
+  - ogv
   - and more coming...
 
   ## 🔊 Audio 
