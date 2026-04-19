@@ -1,6 +1,6 @@
 import shutil
 import os
-from gui import *
+from utils import all_files_paths, all_folders_paths
 
 for files_path in all_files_paths:
 
