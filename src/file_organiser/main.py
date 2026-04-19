@@ -4,7 +4,7 @@ from gui import *
 
 for files_path in all_files_paths:
 
-    folder_path = all_folders_paths  #input("Enter the path of folder to organise: ").strip(' "')
+    folder_path = all_folders_paths
 
     file_path = files_path
 
