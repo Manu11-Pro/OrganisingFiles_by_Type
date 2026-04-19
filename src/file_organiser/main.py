@@ -59,6 +59,18 @@ for files_path in all_files_paths:
         shutil.copy2(file_path , dest_dir_docs)
         print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
 
+    if ext == ".ods":
+        if not os.path.exists(dest_dir_docs):
+            os.makedirs(dest_dir_docs)
+        shutil.copy2(file_path , dest_dir_docs)
+        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
+
+    if ext == ".xlsx":
+        if not os.path.exists(dest_dir_docs):
+            os.makedirs(dest_dir_docs)
+        shutil.copy2(file_path , dest_dir_docs)
+        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
+
     #Videos
 
     dest_dir_videos = os.path.join(folder_path, "Videos")

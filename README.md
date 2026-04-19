@@ -16,6 +16,8 @@
   - txt
   - pdf
   - docx
+  - ods
+  - xlsx
   - and more coming...
 
   ## 📹 Videos
