@@ -1,7 +1,7 @@
 import shutil
 import os
-from utils import all_files_paths, all_folders_paths
-from file_info_dictionary import file_info
+from .utils import all_files_paths, all_folders_paths
+from .file_info_dictionary import file_info
 
 def main():
     extension_map = {ext : category for category,

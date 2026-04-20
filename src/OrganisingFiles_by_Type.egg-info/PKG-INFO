@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: OrganisingFiles_by_Type
+Version: 0.1.0
+Summary: File Organiser which organises files by type
+Author: Manu11-Pro
+License: MIT
+Project-URL: Homepage, https://github.com/Manu11-Pro/OrganisingFiles_by_Type
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# 📁OrganisingFiles_by_Type
+- 📄 This repo features File Organising by Type of Files!.
+- 📄 This repo uses Python to Organise Files so that users can care about doing stuff they want to instead of the tedious new_folder,copy,cut,paste.
+- 📄 It is also a good way to not loose your files in the messy file heapes!
+
+
+
+# Organising into Types!
+  ## 📸 Images
+  - png
+  - jpg
+  - jpeg
+  - and more coming...
+
+  ## 📄 Documents
+  - txt
+  - pdf
+  - docx
+  - ods
+  - xlsx
+  - and more coming...
+
+  ## 📹 Videos
+  - mp4
+  - mov
+  - ogv
+  - and more coming...
+
+  ## 🔊 Audio 
+  - mp3
+  - wav
+  - and more coming...
+  

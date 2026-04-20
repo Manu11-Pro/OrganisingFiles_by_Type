@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/OrganisingFiles_by_Type.egg-info/PKG-INFO
+src/OrganisingFiles_by_Type.egg-info/SOURCES.txt
+src/OrganisingFiles_by_Type.egg-info/dependency_links.txt
+src/OrganisingFiles_by_Type.egg-info/entry_points.txt
+src/OrganisingFiles_by_Type.egg-info/top_level.txt
+src/file_organiser/__init__.py
+src/file_organiser/file_info_dictionary.py
+src/file_organiser/gui.py
+src/file_organiser/main.py
+src/file_organiser/utils.py
