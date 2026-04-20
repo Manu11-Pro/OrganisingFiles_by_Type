@@ -15,11 +15,13 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-"Homepage" = "https://github.com"
+"Homepage" = "https://github.com/Manu11-Pro/OrganisingFiles_by_Type"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
 
 [project.scripts]
-# This allows people to just type 'organise' in their terminal to run your tool
-organise = "OrganisingFiles_by_Type.main:main"
+organise = "file_organiser.main:main"
 
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
