@@ -87,6 +87,12 @@ for files_path , folder_path in zip (all_files_paths, all_folders_paths):
         shutil.copy2(file_path , dest_dir_docs)
         print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
 
+    if ext == ".epub":
+        if not os.path.exists(dest_dir_docs):
+            os.makedirs(dest_dir_docs)
+        shutil.copy2(file_path , dest_dir_docs)
+        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
+
     #Videos
 
     dest_dir_videos = os.path.join(folder_path, "Videos")
