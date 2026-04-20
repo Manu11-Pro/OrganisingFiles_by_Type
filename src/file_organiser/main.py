@@ -1,138 +1,21 @@
 import shutil
 import os
 from utils import all_files_paths, all_folders_paths
+from file_info_dictionary import file_info
+
+
+extension_map = {ext : category for category,
+                 exts in file_info.items() for ext in exts}
 
 for files_path , folder_path in zip (all_files_paths, all_folders_paths):
 
-    file_path = files_path
-
-    file_name_with_ext_only = os.path.basename(file_path)
-    print(file_name_with_ext_only)
-
-    filename, ext = os.path.splitext(file_name_with_ext_only)
-
+    filename, ext = os.path.splitext(files_path)
     ext = ext.lower()
 
-    #Images
+    category = extension_map.get(ext, "Others")
 
-    dest_dir_images = os.path.join(folder_path, "Images")
+    dest_dir = os.path.join(folder_path, category)
+    os.makedirs(dest_dir, exist_ok=True)
 
-    if ext == ".png":
-        if not os.path.exists(dest_dir_images):
-            os.makedirs(dest_dir_images)
-        shutil.copy2(file_path , dest_dir_images)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_images}")
-
-    if ext == ".jpg":
-        if not os.path.exists(dest_dir_images):
-            os.makedirs(dest_dir_images)
-        shutil.copy2(file_path , dest_dir_images)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_images}")
-
-    if ext == ".jpeg":
-        if not os.path.exists(dest_dir_images):
-            os.makedirs(dest_dir_images)
-        shutil.copy2(file_path , dest_dir_images)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_images}")
-
-    #Documents
-
-    dest_dir_docs = os.path.join(folder_path, "Documents")
-
-    if ext == ".pdf":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".txt":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".odt":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".docx":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".ods":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".md":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".pages":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".xlsx":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".csv":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    if ext == ".epub":
-        if not os.path.exists(dest_dir_docs):
-            os.makedirs(dest_dir_docs)
-        shutil.copy2(file_path , dest_dir_docs)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_docs}")
-
-    #Videos
-
-    dest_dir_videos = os.path.join(folder_path, "Videos")
-
-    if ext == ".mp4":
-        if not os.path.exists(dest_dir_videos):
-            os.makedirs(dest_dir_videos)
-        shutil.copy2(file_path , dest_dir_videos)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_videos}")
-
-    if ext == ".mov":
-        if not os.path.exists(dest_dir_videos):
-            os.makedirs(dest_dir_videos)
-        shutil.copy2(file_path , dest_dir_videos)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_videos}")
-
-    if ext == ".ogv":
-        if not os.path.exists(dest_dir_videos):
-            os.makedirs(dest_dir_videos)
-        shutil.copy2(file_path , dest_dir_videos)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_videos}")
-
-    #Musics
-
-    dest_dir_musics = os.path.join(folder_path, "Musics")
-
-    if ext == ".mp3":
-        if not os.path.exists(dest_dir_musics):
-            os.makedirs(dest_dir_musics)
-        shutil.copy2(file_path , dest_dir_musics)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_musics}")
-
-    if ext == ".wav":
-        if not os.path.exists(dest_dir_musics):
-            os.makedirs(dest_dir_musics)
-        shutil.copy2(file_path , dest_dir_musics)
-        print(f"Organised {file_name_with_ext_only} to {dest_dir_musics}")
+    shutil.copy2(files_path, dest_dir)
+    print(f"Organised {os.path.basename(files_path)} to {dest_dir}")
