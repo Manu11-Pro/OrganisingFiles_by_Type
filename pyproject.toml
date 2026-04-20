@@ -2,12 +2,27 @@
 name = "OrganisingFiles_by_Type"
 version = "0.1.0"
 description = "File Organiser which organises files by type"
+readme = "README.md"
 authors = [
     { name = "Manu11-Pro" }
 ]
-
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 dependencies = []
 
+[project.urls]
+"Homepage" = "https://github.com/Manu11-Pro/OrganisingFiles_by_Type"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.scripts]
+organise = "file_organiser.main:main"
+
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
