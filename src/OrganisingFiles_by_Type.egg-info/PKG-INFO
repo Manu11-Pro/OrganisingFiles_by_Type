@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: OrganisingFiles_by_Type
-Version: 0.1.2
+Version: 0.1.3
 Summary: File Organiser which organises files by type
 Author: Manu11-Pro
 License: MIT
@@ -56,4 +56,22 @@ The installation of OrganisingFiles_by_Type is very simple :
   - mp3
   - wav
   - and more coming...
+
+  ## 🧊 3D
+  - obj
+  - stl
+  - amf
+  - and more coming...
   
+# Optimization
+
+- Optimised the core logic to improve performance
+
+  ## Change
+  - Removed heaps of If statements which causes performance decrease.
+  - Instead Added dictionary lookup mapping which increased performance!
+  - Change :
+      If statements :  ~0.2910s
+      Dictionary    :  ~0.2007s
+
+      A ~31% Increase in Performance!
