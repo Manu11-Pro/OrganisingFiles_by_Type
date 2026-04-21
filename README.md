@@ -53,7 +53,7 @@ The installation of OrganisingFiles_by_Type is very simple :
 
 - Optimised the core logic to improve performance
 
-  ## Change
+  ## Efficient Algorithm
   - Removed heaps of If statements which causes performance decrease.
   - Instead Added dictionary lookup mapping which increased performance!
   - Change :
@@ -61,3 +61,12 @@ The installation of OrganisingFiles_by_Type is very simple :
       Dictionary    :  ~0.2007s
 
       A ~31% Increase in Performance!
+
+  ## Minimized Bundle Size
+  - This Project only uses built-in Python Standard Libraries
+  - They are:
+      - shutil
+      - os
+      - tkinter
+  - Zero external dependencies whuch results in a small package size (~3.6 kB)
+  
