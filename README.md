@@ -49,3 +49,15 @@ The installation of OrganisingFiles_by_Type is very simple :
   - amf
   - and more coming...
   
+# Optimization
+
+- Optimised the core logic to improve performance
+
+  ## Change
+  - Removed heaps of If statements which causes performance decrease.
+  - Instead Added dictionary lookup mapping which increased performance!
+  - Change :
+      If statements :  ~0.2910s
+      Dictionary    :  ~0.2007s
+
+      A ~31% Increase in Performance!
