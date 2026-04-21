@@ -42,4 +42,10 @@ The installation of OrganisingFiles_by_Type is very simple :
   - mp3
   - wav
   - and more coming...
+
+  ## 🧊 3D
+  - obj
+  - stl
+  - amf
+  - and more coming...
   
