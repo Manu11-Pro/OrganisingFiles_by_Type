@@ -48,6 +48,12 @@ The installation of OrganisingFiles_by_Type is very simple :
   - stl
   - amf
   - and more coming...
+
+  ## 🖥 Code
+  - py
+  - java
+  - cpp
+  - c
   
 # Optimization
 
