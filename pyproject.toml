@@ -1,6 +1,6 @@
 [project]
 name = "OrganisingFiles_by_Type"
-version = "0.1.4"
+version = "0.1.5"
 description = "File Organiser which organises files by type"
 readme = "README.md"
 authors = [
