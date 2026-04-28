@@ -3,7 +3,7 @@
 - 📄 This repo uses Python to Organise Files so that users can care about doing stuff they want to instead of the tedious new_folder,copy,cut,paste.
 - 📄 It is also a good way to not loose your files in the messy file heapes!
 
-# Installation
+# Install and Use
 The installation of OrganisingFiles_by_Type is very simple :  
 - Open a clean Terminal
 - Type :
@@ -16,6 +16,7 @@ The installation of OrganisingFiles_by_Type is very simple :
   organise 
   ``` 
   in Terminal to start organising!
+- Please use **Python3.14** and tkinter version that comes with it.Any other versions are not tested and  old versions can lead to the package not working as intended.
 
 # Organising into Types!
   ## 📸 Images

@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: OrganisingFiles_by_Type
-Version: 0.1.4
+Version: 0.1.5
 Summary: File Organiser which organises files by type
 Author: Manu11-Pro
 License: MIT
@@ -62,6 +62,12 @@ The installation of OrganisingFiles_by_Type is very simple :
   - stl
   - amf
   - and more coming...
+
+  ## 🖥 Code
+  - py
+  - java
+  - cpp
+  - c
   
 # Optimization
 

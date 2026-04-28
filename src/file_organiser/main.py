@@ -1,8 +1,12 @@
 import shutil
 import os
+import sys
 from .utils import all_files_paths, all_folders_paths
 from .file_info_dictionary import file_info
 
+if sys.version_info < (3, 14):
+    sys.exit("OrganisingFiles_by_Type requires Python3.14.x+ to work as intended")
+    
 def main():
     extension_map = {ext : category for category,
                     exts in file_info.items() for ext in exts}
