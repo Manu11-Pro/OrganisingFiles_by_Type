@@ -75,5 +75,5 @@ The installation of OrganisingFiles_by_Type is very simple :
       - shutil
       - os
       - tkinter
-  - Zero external dependencies whuch results in a small package size (~3.6 kB)
+  - Zero external dependencies which results in a small package size (~3.6 kB)
   
